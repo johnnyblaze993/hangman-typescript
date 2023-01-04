@@ -1,8 +1,16 @@
-import React from "react";
-import "./App.css";
+import React, { FC } from "react";
 
-function App() {
-  return <div className="App">hey</div>;
-}
+import "./App.css";
+import Hangman from "./components/Hangman";
+import TodoList from "./components/TodoList";
+
+const App: FC = () => {
+  return (
+    <div className="App">
+      {/* <TodoList /> */}
+      <Hangman />
+    </div>
+  );
+};
 
 export default App;
